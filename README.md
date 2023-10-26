@@ -1,7 +1,5 @@
-## Robot Package Template
+## Suave Drone ROS Package
 
-This is a GitHub template. You can make your own copy by clicking the green "Use this template" button.
+This package is based on the template provided by Josh Newans https://github.com/joshnewans/my_bot and modified for use in the SUAVE drone swarm project by the Engineering Phyics Propulsion Laboratory (EPPL) at Embry-Riddle Aeronautical University (ERAU)
 
-It is recommended that you keep the repo/package name the same, but if you do change it, ensure you do a "Find all" using your IDE (or the built-in GitHub IDE by hitting the `.` key) and rename all instances of `my_bot` to whatever your project's name is.
-
-Note that each directory currently has at least one file in it to ensure that git tracks the files (and, consequently, that a fresh clone has direcctories present for CMake to find). These example files can be removed if required (and the directories can be removed if `CMakeLists.txt` is adjusted accordingly).
+This repository currently covers the bare essentials required to simulate different methods of Simultaneous Location and Mapping (SLAM) navigation for the drone swarm, and will not include swarm control or other unneccesary systems at this time. The simulation will be done using a simple differential drive robot with a caster wheel to approximate the mobility of a quadcopter style drone, with plans to update to include these modules as the project develops. This method of simulation was chosen because it allows for similar mobility to a drone with the benefit of simplicity of design.
